@@ -1,0 +1,197 @@
+*{
+  margin:0px;
+  padding: 0px;
+}
+body{
+  background: #f3f3f3;
+}
+/**********************    NAVBAR         *************************/
+	.bar:after {
+	    content: '\002B';
+	    color: #777;
+	    font-weight: bold;
+	    float: right;
+	    margin-left: 5px;
+	}
+	.active:after {
+	    content: "\2212";
+	}
+	#sidenav  .list{
+		display: none;
+	}
+	#logo img{
+	    width: 100%;
+	}
+	#sidenav  button{
+		background-color: #fd4513;
+	    border: none;
+	    color: white;
+		padding: 20px;
+	    text-align: center;
+	    text-decoration: none;
+	    /*display: inline-block;
+	    margin: 4px 2px;*/
+	    font-size: 1em;
+	    cursor: pointer;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+ 	#sidenav  a{
+		color:white;
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+@media only screen and (max-width:950px){
+		#sidenav  button{
+		    padding: 10px;		
+		}
+}
+@media only screen and (min-width:500px ){
+	#navMin{
+		display: none;
+	}
+	#sidenav {
+	    height: 100%;
+	    width: 10%;
+	    position: fixed;
+	    z-index: 1;
+	    top: 0;
+	    left: 0;
+	    background-color: #fd4513;
+	    overflow-x: hidden;
+	    padding-top: 20px;
+	}
+	#sidenav {
+		float: left;
+	}
+	#main {
+	    width:90%;
+	    float: right;
+	}
+	#sidenav .closebtn {
+		display: none;
+	}
+}
+@media only screen and (max-width:499px ){
+	#navMin{
+    	background-color: #fd4513;
+    	height: 44px;
+    	width: 10%;
+    	display: flex;
+    	padding-left: 5px;
+	}
+     #sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #fd4513;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+     #sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+}
+/*++++++++++++++++++++++  TABELLA ++++++++++++++++++ */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #333;
+}
+@media only screen and (max-width:499px ){
+	#tabella{
+		overflow-x:auto;
+	}
+
+}
+/*+++++++++++++++++++++++++++++ FORM +++++++++++++++++++++++*/
+@media only screen and (max-width:699px){
+	#input{
+		width: 90%;
+		padding: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+}
+@media only screen and (min-width:700px){
+	#input{
+		padding: 10px;
+		
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+	.input-field {
+	  width: 100%;
+	  padding: 10px;
+	  outline: none;
+	  margin-bottom: 10px;
+	}
+
+	.button{
+		opacity:0.8;
+		width:100%;
+		background-color: #fd4513;
+		border: none;
+    	color: white;
+    	padding: 20px;
+    	align-items: center;
+    	font-size: 16px;
+    	margin: 4px 2px;
+    	cursor: pointer;
+    	border-radius: 12px;
+	}
+	.button:hover{
+		opacity:1;
+
+	}
+
+
+
+/*Input*/
+#input .check {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+
+.done{
+	padding:30px;
+	background-color:#54E653;
+	border:1px solid green;
+	font-weight:bold;
+	margin-top:5px;
+	margin-bottom:10px;	
+}
+
